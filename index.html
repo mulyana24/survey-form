@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>United Indonesia Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">United Indonesia Survey Form</h1>
+    <p id="description">Please fill the form, thank you.</p>
+
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </label>
+
+      <label for="email" id="email-label">
+        Email
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </label>
+
+      <label for="number" id="number-label">
+        Age
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="How old are you ?"
+          min="17"
+          max="50"
+        />
+      </label>
+
+      <label for="dropdown" id="dropdown-label">
+        How do you United Indonesia ?
+        <select name="dropdown" id="dropdown">
+          <option>Pilih</option>
+          <option value="1">Sosial Media</option>
+          <option value="2">TV</option>
+          <option value="3">Newspaper</option>
+        </select>
+      </label>
+      <label for="gender" id="gender-label">
+        <legend>What is your gender ?</legend>
+
+        <input
+          type="radio"
+          name="gender"
+          id="male"
+          class="inline"
+          value="male"
+          checked
+        />
+        Male
+        <br />
+        <input
+          type="radio"
+          name="gender"
+          id="female"
+          class="inline"
+          value="female"
+        />
+        Female
+      </label>
+      <label for="player" id="player-label">
+        Please choose your favorite players ?
+        <br />
+        <input
+          type="checkbox"
+          name="player"
+          id="player"
+          value="rashford"
+          class="inline"
+        />Rashford <br />
+        <input
+          type="checkbox"
+          name="player"
+          id="player"
+          value="maino"
+          class="inline"
+        />Maino
+        <br />
+        <input
+          type="checkbox"
+          name="player"
+          id="player"
+          value="casimero"
+          class="inline"
+        />Casimero <br />
+        <input
+          type="checkbox"
+          name="player"
+          id="player"
+          value="bruno-fernandes"
+          class="inline"
+        />Bruno Fernandes <br />
+        <input
+          type="checkbox"
+          name="player"
+          id="player"
+          value="holjund"
+          class="inline"
+        />Holjund <br />
+        <input
+          type="checkbox"
+          name="player"
+          id="player"
+          value="onana"
+          class="inline"
+        />Onana
+        <br />
+        <input
+          type="checkbox"
+          name="player"
+          id="player"
+          value="maguire"
+          class="inline"
+        />Maguire
+      </label>
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      </label>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
